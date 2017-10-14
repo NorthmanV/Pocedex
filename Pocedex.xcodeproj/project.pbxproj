@@ -22,6 +22,7 @@
 		876DB1981F92A80000124915 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		876DB19B1F92A80000124915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		876DB19D1F92A80000124915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		876DB1A31F92B20800124915 /* pokemon.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +60,7 @@
 				876DB1951F92A80000124915 /* Main.storyboard */,
 				876DB1981F92A80000124915 /* Assets.xcassets */,
 				876DB19A1F92A80000124915 /* LaunchScreen.storyboard */,
+				876DB1A31F92B20800124915 /* pokemon.csv */,
 				876DB19D1F92A80000124915 /* Info.plist */,
 			);
 			path = Pocedex;
