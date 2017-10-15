@@ -13,6 +13,7 @@
 		876DB1991F92A80000124915 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 876DB1981F92A80000124915 /* Assets.xcassets */; };
 		876DB19C1F92A80000124915 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 876DB19A1F92A80000124915 /* LaunchScreen.storyboard */; };
 		876DB1A61F93700900124915 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DB1A51F93700900124915 /* Pokemon.swift */; };
+		876DB1A91F93F85200124915 /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DB1A81F93F85200124915 /* PokeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		876DB19D1F92A80000124915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		876DB1A31F92B20800124915 /* pokemon.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 		876DB1A51F93700900124915 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		876DB1A81F93F85200124915 /* PokeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 		876DB1901F92A80000124915 /* Pocedex */ = {
 			isa = PBXGroup;
 			children = (
+				876DB1A71F93F80500124915 /* View */,
 				876DB1A41F936FD200124915 /* Model */,
 				876DB1911F92A80000124915 /* AppDelegate.swift */,
 				876DB1931F92A80000124915 /* ViewController.swift */,
@@ -75,6 +78,14 @@
 				876DB1A51F93700900124915 /* Pokemon.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		876DB1A71F93F80500124915 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				876DB1A81F93F85200124915 /* PokeCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				876DB1A91F93F85200124915 /* PokeCell.swift in Sources */,
 				876DB1941F92A80000124915 /* ViewController.swift in Sources */,
 				876DB1921F92A80000124915 /* AppDelegate.swift in Sources */,
 				876DB1A61F93700900124915 /* Pokemon.swift in Sources */,
