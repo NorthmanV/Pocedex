@@ -20,6 +20,7 @@
 		876DB19C1F92A80000124915 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 876DB19A1F92A80000124915 /* LaunchScreen.storyboard */; };
 		876DB1A61F93700900124915 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DB1A51F93700900124915 /* Pokemon.swift */; };
 		876DB1A91F93F85200124915 /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DB1A81F93F85200124915 /* PokeCell.swift */; };
+		87FDA5F61F9CADCF0061F46F /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FDA5F51F9CADCF0061F46F /* PokemonDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		876DB19D1F92A80000124915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		876DB1A51F93700900124915 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		876DB1A81F93F85200124915 /* PokeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
+		87FDA5F51F9CADCF0061F46F /* PokemonDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				876DB1931F92A80000124915 /* ViewController.swift */,
+				87FDA5F51F9CADCF0061F46F /* PokemonDetailVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				876DB1A91F93F85200124915 /* PokeCell.swift in Sources */,
 				876DB1941F92A80000124915 /* ViewController.swift in Sources */,
 				876DB1921F92A80000124915 /* AppDelegate.swift in Sources */,
+				87FDA5F61F9CADCF0061F46F /* PokemonDetailVC.swift in Sources */,
 				876DB1A61F93700900124915 /* Pokemon.swift in Sources */,
 				870509F81F9B5A4F005E3DBE /* csv.swift in Sources */,
 			);

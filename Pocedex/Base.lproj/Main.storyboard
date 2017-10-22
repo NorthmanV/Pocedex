@@ -29,7 +29,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokedex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j7h-Cn-btI">
-                                        <rect key="frame" x="139" y="24" width="98.5" height="35"/>
+                                        <rect key="frame" x="140.5" y="24" width="95" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="4Ig-0c-ar9"/>
                                         </constraints>
@@ -60,12 +60,16 @@
                                     <constraint firstAttribute="trailing" secondItem="hNT-PR-KKX" secondAttribute="trailing" constant="8" id="kMP-Q1-gpd"/>
                                 </constraints>
                             </view>
-                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="sJL-Y6-nPS">
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="sJL-Y6-nPS">
                                 <rect key="frame" x="0.0" y="65" width="375" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="pGS-Uq-z0S"/>
                                 </constraints>
                                 <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
                             </searchBar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="U1a-wP-EhZ">
                                 <rect key="frame" x="0.0" y="121" width="375" height="546"/>
@@ -142,11 +146,37 @@
                     </view>
                     <connections>
                         <outlet property="collection" destination="4Ls-A5-LEy" id="IDP-fc-woH"/>
+                        <outlet property="searchBar" destination="sJL-Y6-nPS" id="1zT-qc-V2S"/>
+                        <segue destination="94Z-M8-zJ4" kind="show" identifier="PokemonDetailVC" id="o10-6u-qvi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="133.5832083958021"/>
+            <point key="canvasLocation" x="113" y="134"/>
+        </scene>
+        <!--Pokemon DetailVC-->
+        <scene sceneID="mjB-8d-uhu">
+            <objects>
+                <viewController id="94Z-M8-zJ4" customClass="PokemonDetailVC" customModule="Pocedex" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mVZ-Je-cQQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="POKEMON" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zC1-ZP-RaF">
+                                <rect key="frame" x="117" y="273" width="141" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="sbF-ii-dHt"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PbY-M9-kOl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="904.79999999999995" y="133.5832083958021"/>
         </scene>
     </scenes>
     <resources>
