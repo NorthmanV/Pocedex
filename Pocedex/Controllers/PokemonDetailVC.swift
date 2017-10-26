@@ -28,11 +28,28 @@ class PokemonDetailVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         nameLbl.text = pokemon.name.capitalized
+        let image = UIImage(named: String(pokemon.pokedexId))
+        mainImg.image = image
+        currentEvoImg.image = image
+        pokedexIdLbl.text = String(pokemon.pokedexId)
+        
+        
+        pokemon.downloadPokemonDetails {
+            //called after the network call is complete
+            self.updateUI()
+        }
 
     }
-
+    func updateUI() {
+        attackLbl.text = pokemon.attack
+        defenseLbl.text = pokemon.defense
+        heightLbl.text = pokemon.height
+        weightLbl.text = pokemon.weight
+        typeLbl.text = pokemon.type
+    }
+    
+    
     @IBAction func backButtonPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
