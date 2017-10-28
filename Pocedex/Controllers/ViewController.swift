@@ -23,6 +23,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         super.viewDidLoad()
         collection.delegate = self
         collection.dataSource = self
+        collection.contentInset = UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
+
         searchBar.delegate = self
         searchBar.returnKeyType = UIReturnKeyType.done
         
@@ -133,6 +135,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             if let pokemonDetailVC = segue.destination as? PokemonDetailVC {
                 if let poke = sender as? Pokemon {
                     pokemonDetailVC.pokemon = poke
+                    pokemonDetailVC.pokemonsArray = pokemons
                 }
             }
         }
