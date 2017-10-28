@@ -13,7 +13,7 @@ class Pokemon {
     
     private var _name: String!
     private var _pokedexId: Int!
-    private var _description: String!
+    private var _abilities: String!
     private var _type: String!
     private var _attack: String!
     private var _defense: String!
@@ -30,11 +30,11 @@ class Pokemon {
         return _pokedexId
     }
     
-    var description: String {
-        if _description == nil {
-            _description = ""
+    var abilities: String {
+        if _abilities == nil {
+            _abilities = ""
         }
-        return _description
+        return _abilities
     }
     
     var type: String {
@@ -114,10 +114,22 @@ class Pokemon {
                                 }
                             }
                         }
-                    print(self._type)
-                    }
                 } else {
                     self._type = "None"
+                }
+                if let abilities = dict["abilities"] as? [Dictionary<String, AnyObject>], abilities.count > 0 {
+                    for x in 0..<abilities.count {
+                        if let ability = abilities[x]["ability"] as? Dictionary<String, AnyObject> {
+                            if let name = ability["name"] as? String {
+                                if x == 0 {
+                                    self._abilities = name.capitalized
+                                } else {
+                                    self._abilities! += ", \(name.capitalized)"
+                                }
+                            }
+                        }
+                    }
+                }
                 }
             completed()
         }

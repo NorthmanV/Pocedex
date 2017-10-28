@@ -14,15 +14,14 @@ class PokemonDetailVC: UIViewController {
 
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var mainImg: UIImageView!
-    @IBOutlet weak var descriptionLbl: UILabel!
+    @IBOutlet weak var abilitiesLbl: UILabel!
     @IBOutlet weak var pokedexIdLbl: UILabel!
     @IBOutlet weak var typeLbl: UILabel!
     @IBOutlet weak var attackLbl: UILabel!
     @IBOutlet weak var defenseLbl: UILabel!
     @IBOutlet weak var heightLbl: UILabel!
     @IBOutlet weak var weightLbl: UILabel!
-    @IBOutlet weak var currentEvoImg: UIImageView!
-    @IBOutlet weak var nextEvoImg: UIImageView!
+    @IBOutlet weak var nextPokemon: UIImageView!
     @IBOutlet weak var evoLbl: UILabel!
     
     
@@ -31,9 +30,9 @@ class PokemonDetailVC: UIViewController {
         nameLbl.text = pokemon.name.capitalized
         let image = UIImage(named: String(pokemon.pokedexId))
         mainImg.image = image
-        currentEvoImg.image = image
+        nextPokemon.image = UIImage(named: "\(pokemon.pokedexId + 1)")
         pokedexIdLbl.text = String(pokemon.pokedexId)
-        
+        abilitiesLbl.sizeToFit()
         
         pokemon.downloadPokemonDetails {
             //called after the network call is complete
@@ -47,6 +46,7 @@ class PokemonDetailVC: UIViewController {
         heightLbl.text = pokemon.height
         weightLbl.text = pokemon.weight
         typeLbl.text = pokemon.type
+        abilitiesLbl.text = pokemon.abilities
     }
     
     
